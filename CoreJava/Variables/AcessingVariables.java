@@ -26,7 +26,7 @@ Inside the class-Static variables
 ********************************
 1)Directly we can access inside the method.(Both instance/static area)
 2)Using class reference also we can access in instance/static area.
-3)Using Object reference we can access instance variables.
+3)Using Object reference we can access static variables.
 
 Local Variables-Acess
 *********************

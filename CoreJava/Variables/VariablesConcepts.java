@@ -16,6 +16,17 @@ Rules for Declaring Variables.
   			&
   Method calling by compiler will be different.
 
+Syntax for Creating a variable
+******************************
+
+<Modifier Name><static keyword><Data Type><userDefined Name>= <Value>
+example:- 
+public static int x=100;
+
+Here 
+<Modifier Name><static keyword> are optional
+Example 
+int x=100;
 
 Cases:- 
 *******

@@ -98,147 +98,6 @@ Names can also begin with $ and _ (but we will not use it in this tutorial)
 Names are case sensitive ("myVar" and "myvar" are different variables)
 Reserved words (like Java keywords, such as int or boolean) cannot be used as names
 -----------------------------------------------------------------------------------------------------
-1)Java File can have mulitple class. 
-  In this Screnario we can save java file with any name.
-
-class Bank
-{
-
-}
-class HDFC_Bank
-{
-}
-class SBI_Bank
-{
-}
-class Canara_Bank
-{
-}
-
-How to save the Java file-->We can save it with any name.
-*********************************************************
-BankApplication.java
-
-How to Compile Java File
-*************************
-javac BankApplication.java
-
-How to Run the Java File, We can Run the java class that has main method.
-*************************************************************************
-java BankApplication
-
-
-
-2)Java File can have mulitple class but only one class should be public.
-  In this Scenario we should save the java file same as class name which is having public
-
-public class Bank
-{
-  public static void main(String[] args) 
-	{
-		System.out.println("Hello World!");
-	}
-}
-class HDFC_Bank
-{
-}
-class SBI_Bank
-{
-}
-class Canara_Bank
-{
-}
-
-
-How to save the Java file-->We can save it with specific name as its contains public class.
-*******************************************************************************************
-BankApplication.java
-
-How to Compile Java File
-*************************
-javac BankApplication.java
-
-How to Run the Java File, We can Run the java class that has main method.
-*************************************************************************
-java BankApplication
-
-
-3)Java File can have mulitple class es ,But Only one main method we can write  for a class.
-
-public class Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("Bank");
-	}
-}
-class HDFC_Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("HDFC Bank");
-	}
-}
-class SBI_Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("SBI Bank");
-	}
-}
-class Canara_Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("Canara Bank");
-	}
-}
-
-
-4)Main Method is optional for a class.
-
-class Bank
-{
-}
-class HDFC_Bank
-{
-}
-class SBI_Bank
-{
-}
-class Canara_Bank
-{
-}
-
-5)Nesting of a class is allowed in java
-
-class Bank
-{
-	class BankOperation
-	{
-
-	}
-}
-
-class HDFC_Bank
-{
-	class HDFC_Branch
-	{
-	}
-}
-class SBI_Bank
-{
-	class SBI_Branch
-	{
-	}
-}
-class Canara_Bank
-{
-	class Canara_Branch
-	{
-	}
-}
------------------------------------------------------------------------------------------------------
 Assignment:- 
 ***********
 
@@ -255,3 +114,17 @@ Assignment:-
 4)Create 4 class 'Add','Sub','Mul','Div' without Main Method
     Compile Java File and Run any class and Observe Output.
    
+
+
+	class Test{
+		
+	}
+
+
+	class  
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

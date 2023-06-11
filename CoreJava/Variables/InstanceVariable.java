@@ -2,6 +2,7 @@ Instance Variables
 ------------------
 A variable which is declared outside of the 'Method','Block','Constructor','Loop' is called instance variables.
 Instance variables should not have static keyword.
+Instance variables should be declared inside the class.
 
 Syntax for Creating a Instance Variable
 ---------------------------------------
