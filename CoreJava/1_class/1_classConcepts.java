@@ -56,18 +56,18 @@ Specific Name
 If the java File Contain any public class then we need to save the File name same as class name which is having public modifier
 ---------------------------------------------------------------------------------------------------
 How to compile a java File
-
+**************************
 Syntax for Compiling java file.
 
   javac <FileName>.java
 
----------------------------------------------------------------------------------------------------
+
 
 How to Run a java class
-
+************************
 Syntax for Running java file.
 
- java <className having main Mehtod>
+ java <className having main Mehtod in the java file>
 
 ---------------------------------------------------------------------------------------------------
 
@@ -79,15 +79,18 @@ Cases
 2)Java File can have mulitple class but only one class should be public.
   In this Scenario we should save the java file same as class name which is having public
  
-3)Java File can have mulitple class es.
-	
 4)Java File can have mulitple class es 
 	But Only one main method we can write  for a class.
 
 5)Main Method is optional for a class.
   We should write the Main Method only when we want to execute that particular class.
 
-6)Nesting of class is allowed in java.
+6)We cannot write more than 1 main method in a class.
+
+7)Nesting of class is allowed in java.
+
+8)java file with same class name is not allowed.
+	ex:- Same district name in karnataka is not allowed.
 ---------------------------------------------------------------------------------------------------
 Rules for Identifier/UserDefined Names
 
@@ -97,147 +100,6 @@ Names should start with a lowercase letter and it cannot contain whitespace
 Names can also begin with $ and _ (but we will not use it in this tutorial)
 Names are case sensitive ("myVar" and "myvar" are different variables)
 Reserved words (like Java keywords, such as int or boolean) cannot be used as names
------------------------------------------------------------------------------------------------------
-1)Java File can have mulitple class. 
-  In this Screnario we can save java file with any name.
-
-class Bank
-{
-
-}
-class HDFC_Bank
-{
-}
-class SBI_Bank
-{
-}
-class Canara_Bank
-{
-}
-
-How to save the Java file-->We can save it with any name.
-*********************************************************
-BankApplication.java
-
-How to Compile Java File
-*************************
-javac BankApplication.java
-
-How to Run the Java File, We can Run the java class that has main method.
-*************************************************************************
-java BankApplication
-
-
-
-2)Java File can have mulitple class but only one class should be public.
-  In this Scenario we should save the java file same as class name which is having public
-
-public class Bank
-{
-  public static void main(String[] args) 
-	{
-		System.out.println("Hello World!");
-	}
-}
-class HDFC_Bank
-{
-}
-class SBI_Bank
-{
-}
-class Canara_Bank
-{
-}
-
-
-How to save the Java file-->We can save it with specific name as its contains public class.
-*******************************************************************************************
-BankApplication.java
-
-How to Compile Java File
-*************************
-javac BankApplication.java
-
-How to Run the Java File, We can Run the java class that has main method.
-*************************************************************************
-java BankApplication
-
-
-3)Java File can have mulitple class es ,But Only one main method we can write  for a class.
-
-public class Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("Bank");
-	}
-}
-class HDFC_Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("HDFC Bank");
-	}
-}
-class SBI_Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("SBI Bank");
-	}
-}
-class Canara_Bank
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("Canara Bank");
-	}
-}
-
-
-4)Main Method is optional for a class.
-
-class Bank
-{
-}
-class HDFC_Bank
-{
-}
-class SBI_Bank
-{
-}
-class Canara_Bank
-{
-}
-
-5)Nesting of a class is allowed in java
-
-class Bank
-{
-	class BankOperation
-	{
-
-	}
-}
-
-class HDFC_Bank
-{
-	class HDFC_Branch
-	{
-	}
-}
-class SBI_Bank
-{
-	class SBI_Branch
-	{
-	}
-}
-class Canara_Bank
-{
-	class Canara_Branch
-	{
-	}
-}
 -----------------------------------------------------------------------------------------------------
 Assignment:- 
 ***********
