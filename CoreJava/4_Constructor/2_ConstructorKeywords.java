@@ -24,7 +24,11 @@ this. ---> used to refer current class  variable/methods.
 
 super.---->used to refer parent class variable/methods
              Its used to assign value to the parent class variable. 
-             Its used to call to the parent class methods(). 
+             Its used to call to the parent class methods().
+
+The below keywords are always related to instance Area(Instance Method/ Instance blocks/constructor)
+this.
+super.			 
 
 this() ----->Its used to call current class constructor.
 
@@ -34,9 +38,7 @@ The below keywords are always used inside the constructor.
 this()
 super()
 
-The below keywords are always related to instance Area(Instance Method/ Instance blocks/constructor)
-this.
-super.
+
 
 
 1)If we are using in static area(Static Methods/Static Blocks).

@@ -3,7 +3,7 @@ Methods Concepts
 
 Syntax for Creating a Method in java.
 
-<Modifier Name> <Static KeyWord> <Return Type> <UserDefiend Name> (){
+<Modifier Name> <Static KeyWord> <Return Type> <UserDefiend Name> (<data type> <parameter>){
 
 	System.out.println("Method Syntax");
 
@@ -36,10 +36,3 @@ public static void parentName(){
 	System.out.println("Static Method");
  }
 ----------------------------------------------------------------------------------------
-Create 5 class 
- with main method 
- Write 2 instance method in each class.
- Write 2 Static method in each class.
-
- Compile and Run 
-
