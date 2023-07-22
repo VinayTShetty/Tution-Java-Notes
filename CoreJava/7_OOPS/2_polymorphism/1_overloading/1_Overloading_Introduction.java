@@ -28,7 +28,7 @@ When OverLoading should be used
 
 Compile time polymorphism [Method Overloading] :-
 ************************************************
-1) If java class allows more than one method with same name but different number of arguments 
+1) If java class allows more than one method with same name but different number of arguments. 
 										or
 	same number of arguments but different data types those methods are called overloaded methods.
 

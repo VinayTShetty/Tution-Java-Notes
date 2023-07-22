@@ -6,7 +6,7 @@ The access level of a private modifier is only within the class. It cannot be ac
 
 Encapsulation
 *************
-Binding of data and corresponding methods into a single unit is called Encapsulation .
+Binding of data and corresponding methods into a single unit is called Encapsulation.
 
 In Java, encapsulation is achieved by declaring the instance variables of a class as private,
 which means they can only be accessed within the class.
