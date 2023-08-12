@@ -178,7 +178,7 @@ interface C extends A,B{
 	void m1();
 }
 
-Example 11:- class implementing mulitple interface
+Example 12:- class implementing mulitple interface
 *********
 interface A{void m1();}
 interface B{void m1();}
@@ -196,10 +196,8 @@ Assignemnt:-
 4)Write a programe where class A extends mulitple class B,C,D es and Validate the output.
 5)Wrtie a programe where class A extends abstract class and validate the output.
 ------------------------------------------------------------------------------------------------------------
-Example 11:-default method in interface
+Example 13:-default method in interface
 **********
-default void method in interface cannot be overriden in class providing implementation for interface.
-
 Technical Reason for implementation of Default method in interface:-
 1.	Backward Compatibility: One of the primary reasons for introducing default methods 
 	is to ensure backward compatibility. In earlier versions of Java, 
@@ -309,7 +307,7 @@ Assignment:-
 	Overide default void() method of interface A in Test and Exam class.
 	and see the output.
 ------------------------------------------------------------------------------------------------------------
-Example 12:-final variables value cannot be changed.
+Example 14:-final variables value cannot be changed.
 **********
 interface variables are by default public static final 
 
@@ -335,7 +333,7 @@ Assignemnt:-
 	Acess the interface varaible x in instance method m1() of class Test.
 	call the instance method m1() in Test main method class.
 ------------------------------------------------------------------------------------------------------------
-Example 13:- Nested interface is valid in java.  
+Example 15:- Nested interface is valid in java.  
 ***********
 Writing a interface inside an interface is valid.
 
@@ -367,7 +365,7 @@ public class Main {
     }
 }
 ------------------------------------------------------------------------------------------------------------
-Example 14:- Marker/tagged interface
+Example 16:- Marker/tagged interface
 ***********
 A tagged interface, also known as a marker interface, 
 is an interface in Java that doesn't' declare any methods or fields but serves as a "tag" 
@@ -403,7 +401,7 @@ class Test{
 	}
 }
 ------------------------------------------------------------------------------------------------------------
-Example 15:-We can write static method in the interface.
+Example 17:-We can write static method in the interface.
 *******
 interface Bank{
 	void account_open();
@@ -493,3 +491,60 @@ Assignment:-
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
+Hint
+
+Example 13:- Assignment 3 
+**********
+interface Bank{
+	void account_open();
+	void check_address_proof();
+	void auth_biometric();
+	void physical_identity();
+
+	default void commonLogic() {
+		System.out.println("Picture of the Person");
+	}
+}
+
+class SBI implements Bank{
+	public void account_open() {
+		System.out.println("Account Open Book/Ledger");
+	}
+	public void check_address_proof() {
+		System.out.println("Address Proof using Ration Card");	
+	}
+	public void auth_biometric() {
+		System.out.println("BioMetric Using physical Finger");
+		
+	}
+	public void physical_identity() {
+		System.out.println("Physical Identity going in personal to Bank");
+	}
+	
+	public void commonLogic () {
+		System.out.println("Bribe Money can be given to account");
+	}
+}
+
+class Test
+{
+ public static void main(String[] args) {
+	System.out.println("SBI");
+	Bank b=new SBI();
+	b.account_open();
+	b.check_address_proof();
+	b.auth_biometric();
+	b.physical_identity();
+	b.commonLogic();
+}
+}
+
+D:\JavaCode>javac Test.java
+
+D:\JavaCode>java Test
+SBI
+Account Open Book/Ledger
+Address Proof using Ration Card
+BioMetric Using physical Finger
+Physical Identity going in personal to Bank
+Bribe Money can be given to account
