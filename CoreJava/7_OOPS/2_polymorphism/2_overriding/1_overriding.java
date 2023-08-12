@@ -3,7 +3,6 @@ Runtime polymorphism /dynamic binding /late binding.
 Example :- method overriding.
 
 
-
 Important Points
 ***************
 To achieve method overriding we required two java classes with parent and child relationship.

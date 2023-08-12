@@ -1,0 +1,36 @@
+Assignments:- 
+
+1)Create 2 class 'Test','Exam' with Main Method.
+	Compile and Run 'Exam' class.
+
+2)Create 3 class 'Test','Exam','Preparatory' with Main Method 
+	Compile and Run 'Exam' class.
+  Note:- In this 'Exam' class should be public.
+
+3)Create 3 class 'Test','Exam','Preparatory' without Main Method.
+	Just Compile the java file.
+
+4)Create 4 class 'Add','Sub','Mul','Div' without Main Method
+    Compile Java File and Run any class and Observe Output.
+
+5) Rules for Identifiers
+
+6)Notes Creation for Class Concepts
+
+
+Variables
+*********
+
+1)Create Notes on Variables
+2)Create a Test class with main method declare instance,static and local varibale
+3)Create a Test class with main method declare instance,static and local varibale,Create a instance method m1() and access instance and static variable.
+4)Create 2 class Test and Exam with main method in Exam class.
+   Create instance,static and local variable in Test class and access those variable in Exam class.
+5)Notes Completion on Varaibles
+
+Methods
+*******
+1)Create a class with instance method and static method.
+2)Create a 2 class Exam and Test,
+Create instance and static variables in both access
+Acess instance,static variables from each class and ViceVersa.
