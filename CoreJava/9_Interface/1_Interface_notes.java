@@ -1,10 +1,17 @@
 interface
 *********
 Interface is also one of the type of class.
-(Condition applied)
+Interface methods does not contain any implementation.
 It contains only abstract methods.
 By defualt all methods inside interface are public and abstract.
 interface variables are by default public static final
+interface variables value cannot be changed.
+
+Updated Version on Java 8:-
+**************************
+interface can have one concrete method.
+1)default void(){ } method can be written in interface.
+2)Static method can be written in interface.
 
 Syntax
 ******
@@ -52,7 +59,6 @@ if u know the implementation but not completely then we should go for abstract c
 concerete class
 ***********************************
 if you know the implementation completely then we should go for concrete classes.
-
 
 Main use of using Interface concept.
 ***********************************

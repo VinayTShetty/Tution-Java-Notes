@@ -198,6 +198,8 @@ Assignemnt:-
 ------------------------------------------------------------------------------------------------------------
 Example 11:-default method in interface
 **********
+default void method in interface cannot be overriden in class providing implementation for interface.
+
 Technical Reason for implementation of Default method in interface:-
 1.	Backward Compatibility: One of the primary reasons for introducing default methods 
 	is to ensure backward compatibility. In earlier versions of Java, 
@@ -206,7 +208,6 @@ Technical Reason for implementation of Default method in interface:-
 	This created a significant problem when trying to evolve interfaces in existing codebases. 
 	Default methods allow you to add new methods to an interface without forcing implementing classes to immediately provide implementations.
 	Existing classes that implement the interface can still work without modification
-
 
 interface Bank{
 	void account_open();
@@ -300,6 +301,13 @@ Assignment:-
 			Child is SBI/HDFC.
 	     Bank b=new SBI();
 	     Bank b=new HDFC();
+		 
+***VVIP
+3)Create a interface A with 5 methods.
+	create default method void() A.
+	Implement the interface A in Test and Exam class.
+	Overide default void() method of interface A in Test and Exam class.
+	and see the output.
 ------------------------------------------------------------------------------------------------------------
 Example 12:-final variables value cannot be changed.
 **********
@@ -395,9 +403,85 @@ class Test{
 	}
 }
 ------------------------------------------------------------------------------------------------------------
+Example 15:-We can write static method in the interface.
+*******
+interface Bank{
+	void account_open();
+	void check_address_proof();
+	void auth_biometric();
+	void physical_identity();
+
+	static void commonLogic() {
+		System.out.println("Picture of the Person");
+	}
+}
+
+class SBI implements Bank{
+	public void account_open() {
+		System.out.println("Account Open Book/Ledger");
+	}
+	public void check_address_proof() {
+		System.out.println("Address Proof using Ration Card");	
+	}
+	public void auth_biometric() {
+		System.out.println("BioMetric Using physical Finger");
+		
+	}
+	public void physical_identity() {
+		System.out.println("Physical Identity going in personal to Bank");
+	}
+}
+
+class HDFC implements Bank{
+	public void account_open() {
+		System.out.println("Account Open online");
+	}
+	public void check_address_proof() {
+		System.out.println("Address Proof Using satellite");	
+	}
+	public void auth_biometric() {
+		System.out.println("BioMetric using adhar");
+		
+	}
+	public void physical_identity() {
+		System.out.println("Physical Identity sending CC representative");
+	}
+}
+
+class MainApplication
+{
+ public static void main(String[] args) {
+	System.out.println("SBI");
+	SBI sbi=new SBI();
+	sbi.account_open();
+	sbi.check_address_proof();
+	sbi.auth_biometric();
+	sbi.physical_identity();
+	Bank.commonLogic();
+ 
+	System.out.println("HDFC");
+	HDFC hdfc=new HDFC();
+	hdfc.account_open();
+	hdfc.check_address_proof();
+	hdfc.auth_biometric();
+	hdfc.physical_identity();
+	Bank.commonLogic();
+}
+}
 ------------------------------------------------------------------------------------------------------------
+Difference between default void() and static method() in interface.
+
+Default Methods:-
+****************
+Default methods provide a default implementation that can be optionally overridden by implementing classes. They allow for adding new methods to interfaces while maintaining backward compatibility.
+
+Static Methods:-
+****************
+Static methods are associated with the interface itself and can be invoked using the interface name. They are typically used for utility functions or methods that don't require instance-specific data.
 ------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
+Assignment:-
+1)Create a Table with difference between interface and Abstract class.
+		    	And list down all
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
