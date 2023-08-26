@@ -1,6 +1,7 @@
 
-Example 1)
-Return type concept is not applied.
+Example 1
+
+Return type is void.
 
 class Test
 {
@@ -15,7 +16,7 @@ class Test
 
 *********************************************************************************************
 
-return type concept is implemented.
+return type int
 
 class Test
 {
@@ -101,6 +102,10 @@ D:\JavaCode>java Test
 Main Method Starts
 return type concept
 10
+
+Assignemt:- use the same Case for boolean,And use if else loop for executing
+1)If once
+2)else once.
 *************************************************************************************************
 Using Return type to get the value.
 Using that value doing some computation.
@@ -132,8 +137,9 @@ Using TypeCasting.
 i.e Narrowing.
 
 FYI:- Using lower value dataType for higher return data types.
-
 *************************************************************************************************
+Type Casting Examples missed.
+Definition also not Covered.
 *************************************************************************************************
 *************************************************************************************************
 *************************************************************************************************

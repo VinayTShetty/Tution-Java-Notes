@@ -76,7 +76,7 @@ D:\JavaCode>javac Test.java
 D:\JavaCode>java Test
 Sum= 30
 -------------------------------------------------------------------------------------------------------------
-Example 2
+Example 2:- Disadvantage without OverLoading.
 
 class Test
 {

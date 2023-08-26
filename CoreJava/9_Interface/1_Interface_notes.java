@@ -9,7 +9,8 @@ interface variables value cannot be changed.
 
 Updated Version on Java 8:-
 **************************
-interface can have one concrete method.
+interface can have concrete method.
+
 1)default void(){ } method can be written in interface.
 2)Static method can be written in interface.
 

@@ -67,3 +67,8 @@ Test.java:7: error: variable y might not have been initialized
                 System.out.println(" Value of Y= "+y);
                                                    ^
 1 error
+
+
+Assignment:-
+Wrtie a Programe for showing the Default value for Object Creation.
+Write a Programe showing default values for all Data Types.

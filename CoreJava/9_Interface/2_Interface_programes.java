@@ -288,15 +288,16 @@ Picture of the Person
 
 Assignment:-
 1)Create a example where interface A with 10 methods.
-	without default method implementation.
+	without default void method implementation.
 	Implement that interface A in 5 class es B,C,D,E,F
+
 	Try to add one method in interface A, i.e 11 th method.
 	See what ambiguity will be happening ?
 	Resolve the ambiguity by implementing the 11 th method in 5 class es.
 
-2)In the same example 11 try to execute the logic using Parent reference Child class Object.
+2)In the same example 13 try to execute the logic using Parent reference Child class Object.
 	Hint:- Parent is Bank
-			Child is SBI/HDFC.
+		 Child is SBI/HDFC.
 	     Bank b=new SBI();
 	     Bank b=new HDFC();
 		 
@@ -314,6 +315,7 @@ interface variables are by default public static final
 interface A{
 	int x=10;
 }
+
 class Test implements A{
 	public static void main(String[] args) {
 		x=11;
@@ -327,6 +329,7 @@ Test.java:7: error: cannot assign a value to final variable x
 1 error
 
 Assignemnt:- 
+
 1)Create a example where the interface A having variable x.
 	implement interface A in the class Test.
 	Create a instance method m1() in class Test.
