@@ -16,52 +16,77 @@ The main important application areas of the multithreading are
 2. Implementing multimedia graphics.
 3. Developing animations
 
+
 Thread can be created in two ways:-
 ***********************************
 1) By extending Thread class.
-2) By implementing java.lang.Runnable interface
+2) By implementing  interface(java.lang.Runnable)
 
 
 
 By extending Thread class
 *************************
-Step 1:-Our normal java class will become Thread class whenever we are extending predefined Thread class.
-class Test extends Thread{}
+Create a class GameCar that extends Thread class.
+Create a Object for the GameCar class.
+using the GameCar class Object Reference execute start() method.
+Inside the run() method write all logics that needs to be executed from the Thread.
 
-Step 2:- override the run() method to write the business logic of the Thread( run() method present in Thread class).
-
-class Test extends Thread{
-	public void run(){
-		System.out.println("business logic of the thread");
+class GameCar extends Thread {
+	public void run() {
+		System.out.println("Business Logic of the Thread");
+		System.out.println("Thread Name= " + Thread.currentThread().getName());
 	}
 }
 
-Step 3:- Create userdefined Thread class object.
-i.e Test t=new Test();
-
-class Test extends Thread{
+class Test {
 	public static void main(String[] args) {
-		Test t=new Test();		
+		System.out.println("Main Method");
+		GameCar gc = new GameCar();
+		gc.start();
 	}
 
-	public void run(){
-		System.out.println("business logic of the thread");
-	}
 }
 
-Step 4:- Start the Thread by using start() method of Thread class.
-
-class Test extends Thread{
-	public static void main(String[] args) {
-			System.out.println("Hello");
-			Test t=new Test();
-			t.start();
-	}
-
-	public void run(){
-		System.out.println("business logic of the thread");
-	}
-}
+Main Method
+Business Logic of the Thread
+Thread Name= Thread-0
 
 
+**************************************************************************************************************
 Assignment :-In the same way prepare notes for creating Thread using runnable interface.
+Wrtie all the steps.
+For each steps write the Corresponding code.
+
+
+Create a presentation which involves what is start() and run() method.
+How Overriding Concept will be used.
+**************************************************************************************************************
+
+Thread Scheduler:-
+*****************
+
+Thread Scheduler is a part of the JVM.
+If the application contain more than one Thread.
+Thread execution is descided by Thread Scheduler.
+
+Thread Scheduler mainly uses two algorithms to decide Thread execution.
+1) Preemptive algorithm.
+2) Time slicing algorithm.
+
+We can’t expect exact behavior of the thread scheduler it is JVM vendor dependent.
+So we can’t say expect output of the multithreaded examples we can say the possible outputs.
+
+
+Preemptive algorithm:- 
+**********************
+In this highest priority task is executed first.
+After this task enters into waiting state or dead state then only another higher priority task come to existence.
+
+Time slicing algorithm:-
+***********************
+A task is executed predefined slice of time and then return pool of ready tasks.
+The scheduler determines which task is executed based on the priority and other factors.
+
+**************************************************************************************************************
+Thread Life Cycle Explanation
+*****************************
