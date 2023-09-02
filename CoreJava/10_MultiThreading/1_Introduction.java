@@ -17,10 +17,15 @@ The main important application areas of the multithreading are
 3. Developing animations
 
 
+Take src folder from folder from below location and extract it.
+C:\Program Files\Java\jdk-17.0.1\lib\src
+
+Thread class location will be avaliable at C:\Users\vinayts\OneDrive\Desktop\delete\java.base\java\lang
+
 Thread can be created in two ways:-
 ***********************************
 1) By extending Thread class.
-2) By implementing  interface(java.lang.Runnable)
+2) By implementing  Runnable interface(java.lang.Runnable)
 
 
 
@@ -88,5 +93,51 @@ A task is executed predefined slice of time and then return pool of ready tasks.
 The scheduler determines which task is executed based on the priority and other factors.
 
 **************************************************************************************************************
-Thread Life Cycle Explanation
-*****************************
+
+**************************************************************************************************************
+Thread Name:- 
+*************
+We can Get and Set the Thread Name.
+Methods used for getting and Setting the Thread Name.
+ <class reference variable >. getName();
+ <class reference variable >. setName();
+
+To get the Current Thread Name we can use Thread.currentThread().getName();
+To get the Current Thread ID we can use Thread.currentThread().getId();
+**************************************************************************************************************
+Thread Priority:- 
+*****************
+1. Every Thread in java has some property. It may be default priority provided be the JVM or customized priority provided by the programmer.
+
+2. The valid range of thread priorities is 1 – 10. Where 1 is lowest priority and 10 is highest priority.
+
+3. The default priority of main thread is 5. The priority of child thread is inherited from the parent.
+
+4. Thread defines the following constants to represent some standard priorities.
+
+5. Thread Scheduler will use priorities while allocating processor the thread which is having highest priority will get chance first and the thread which is having low priority.
+
+6. If two threads having the same priority then we can’t expect exact execution order it depends upon Thread Scheduler.
+
+7. The thread which is having low priority has to wait until completion of high priority threads.
+
+8. Three constant values for the thread priority.
+	a. MIN_PRIORITY = 1
+	b. NORM_PRIORITY = 5
+	c. MAX_PRIORITY = 10
+
+Assignment:- Based on the Point 3:-
+Create a example and Print Thread Priority.
+
+Thread class defines the following methods to get and set priority of a Thread.
+Public final int getPriority()
+Public final void setPriority(int priority)
+
+
+Context Switching:- Thread priority decide when to switch from one running thread to another this process is called context switching.
+******************* 
+
+Java.lang.Thread.yield():-
+*************************
+Yield() method causes to pause current executing Thread for giving the chance for waiting threads of same priority.
+If there are no waiting threads or all threads are having low priority then the same thread will continue its execution once again.
