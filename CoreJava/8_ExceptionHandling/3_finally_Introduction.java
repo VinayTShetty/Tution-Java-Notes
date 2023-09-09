@@ -7,7 +7,7 @@ Create individual examples for each.
 finally
 *******
 
-This is the updated notes Please copy it
+
 Introduction
 ************
 
