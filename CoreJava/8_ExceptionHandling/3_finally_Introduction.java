@@ -7,6 +7,19 @@ Create individual examples for each.
 finally
 *******
 
+Introduction
+************
+
+The finally block in java is used to put important codes such as clean up code e.g. closing the file or closing the connection. 
+The finally block executes whether exception rise or not and whether exception handled or not.
+A finally contains all the crucial statements regardless of the exception occurs or not
+
+There are 3 possible cases where finally block can be used:
+
+Case 1: When an exception does not rise
+Case 2: When the exception rises and handled by the catch block
+Case 3: When exception rise and not handled by the catch block 
+
 1) Finally block code is always executed irrespective of try and catch.
 2) It is used to provide clean-up code
 
