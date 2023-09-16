@@ -147,3 +147,4 @@ class Test {
 Assignment 2:- Remove Synchronized keyword and validate the output.
 See how the Thread is changing the msg based randomly.
 ******************************************************************************************************
+
