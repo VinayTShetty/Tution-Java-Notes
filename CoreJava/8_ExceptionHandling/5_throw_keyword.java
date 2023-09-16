@@ -37,22 +37,29 @@ i.e ArithmeticException,FileNotFoundException, ... etc.
 Suppose if the devloper want to create Custom Exception , then devloper can create custom Exception.
 
 
-Developer can create user defined Exception for Both Checked/UnChecked Exception.
-
-	1. User defined checked exception.
-		a. Default constructor approach.
-		b. Parameterized constructor approach.
-	
-	2. User defined un-checked Exception.
+Developer can create user defined Exception for Both Checked/UnChecked Exception in 2 ways.
 		a. Default constructor approach.
 		b. Parameterized constructor approach.
 
 
-Creation of user defined checked Exception by using default constructor approach:-
-***********************************************************************************
+UserDefined Checked Exception
+******************************
 
-1)Create a class that extends Exception class.
-2)use the create Exception in required class.
+1)Default constructor Approach.
+
+	a)create a class that extends Exception.
+	b)use the created class for throw ing the Exception.
+
+2)Parameterized constructor approach.
+	a)create a class that extends Exception.
+	b)create a constructor for the class and use the super() keyword to pass the message to super class constructor.
+	b)use the created class for throw ing the Exception.
+
+
+UserDefined Un-Checked Exception
+******************************
+Same steps as before,
+But in the place of extends Exception, use RuntimeException.
 
 ********************************************************************************************************
 Example 1 :- Predefined Exception.
@@ -233,8 +240,48 @@ Test.java:19: error: constructor Object in class Object cannot be applied to giv
 4 errors
 *********************************************************************************************************
 Example 6 :-
+Passing custome message to Pre-Defined Exception.
+Note:- Although its not recomended to pass custom messsage to PreDefined Exception.
+
+use javap.java.lang.Exception in cmd to see the correponding method.
+
+Actual source code folder
+C:\Users\vinayts\OneDrive\Desktop\delete\java.base\java\lang
+
+class Test{
+	
+	public static void main(String[] args) {
+	new Test().m1(0);	
+	}
+	
+	public void m1(int number) {
+		if(number>0) {
+			int result=10/number;
+			System.out.println("Result= "+number);
+		}else {
+			throw new ArithmeticException("Hello Certisured");
+		}
+	}
+}
+
+
+D:\JavaCode>javac Test.java
+
+D:\JavaCode>java Test
+Exception in thread "main" java.lang.ArithmeticException: Hello Certisured
+        at Test.m1(Test.java:12)
+        at Test.main(Test.java:4
+
 *********************************************************************************************************
 Example 7 :-
+
+	For same Example Create UnChecked Exception.
+	Hint :- For unchecked Exception 
+		    a)create a class that extends RuntimeException
+		    b)use the class for throw ing the Exception.
+
+		
+
 *********************************************************************************************************
 Example 8 :-
 *********************************************************************************************************
