@@ -254,7 +254,45 @@ It's Wednesday!
 
 
 ****************************************************************************************************************
-Example 1:- 
+Example 7:- Enum class cannot extends any other class.
+As its already extends Pre-Defined class i.e Enum.
+
+class Parent{}
+ 
+ enum Day extends Parent {
+        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+    }
+
+public class Test {
+   
+    public static void main(String[] args) {
+       
+    }
+}
+
+
+D:\JavaCode>javac Test.java
+Test.java:3: error: '{' expected
+ enum Day extends Parent {
+         ^
+Test.java:3: error: enum constant expected here
+ enum Day extends Parent {
+          ^
+Test.java:4: error: <identifier> expected
+        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+              ^
+Test.java:4: error: ';' expected
+        MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+                                                                      ^
+Test.java:5: error: ',', '}', or ';' expected
+    }
+     ^
+Test.java:12: error: reached end of file while parsing
+}
+ ^
+6 errors
+
+
 ****************************************************************************************************************
 Example 1:- 
 ****************************************************************************************************************
