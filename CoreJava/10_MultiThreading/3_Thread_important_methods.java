@@ -46,7 +46,7 @@ Hence it is not recommended to use the synchronized modifier in the multithreadi
 Example 2:-
 
 class PrintMessage {
-	public static synchronized void message(String msg) // only one thread is able to access
+	public  static synchronized  void message(String msg) // only one thread is able to access
 	{
 		System.out.println(msg+" Current Thread "+Thread.currentThread().getName());
 		System.out.println(msg+" Current Thread "+Thread.currentThread().getName());
