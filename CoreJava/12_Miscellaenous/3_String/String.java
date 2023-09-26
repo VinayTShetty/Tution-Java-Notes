@@ -42,6 +42,7 @@ Vinay
 1) It is comparing reference type and it returns Boolean value as a return value.
 2) If two reference variables are pointing to same object then it returns true otherwise false.
 
+
 class Test {
 	public static void main(String[] args) {
 		Test t1 = new Test();
@@ -55,12 +56,11 @@ class Test {
 		String s1 = new String("Shetty");
 		String s2 = new String("Shetty");
 		System.out.println(s1 == s2); // false
-		StringBuffer sb1 = new StringBuffer("Certisured");
-		StringBuffer sb2 = new StringBuffer("Certisured");
+		String sb1 = new String("Certisured");
+		String sb2 = new String("Certisured");
 		System.out.println(sb1 == sb2); // flase
 	}
 }
-
 D:\JavaCode>javac Test.java
 
 D:\JavaCode>java Test
@@ -70,3 +70,161 @@ true
 false
 false
 **********************************************************************************************
+StringBuffer
+************
+StringBuffer object is created as follow by the example.
+
+StringBuffer <userdefiened name> =new StringBuffer("Vinay");
+
+Example:- 1
+***********
+
+class Test {
+	public static void main(String[] args) {
+		StringBuffer sb = new StringBuffer("Vinay");
+	}
+}
+
+**********************************************************************************************
+toString() method
+*****************
+toString( ) method present in object class it returns a string representation of object(class-name@hashcode).
+
+Example:- 
+
+class Test {
+	public static void main(String[] args) {
+	Test t=new Test();
+	System.out.println(t.toString());
+	}
+}
+
+Test@2c7b84de
+
+
+String is child class of Object and it is overriding toString() to return content of the String object.
+
+StringBuffer is child class of Object and it is overriding toString() to return content of the StringBuffer object.
+Hint:- See the source file after unzipping for confermation // C:\Users\vinayts\OneDrive\Desktop\delete\java.base\java\lang\String.java
+
+Note :- whenever we are printing any type of reference variable in java internally it is calling toString() method .
+
+
+class Test {
+	public static void main(String[] args) {
+		Test t = new Test();
+		System.out.println(t);
+		System.out.println(t.toString());
+		
+		// String class toString() executed
+		String str = "Vinay";
+		System.out.println(str);
+		System.out.println(str.toString());
+		
+		// StringBuffer class toString() executed
+		StringBuffer sb = new StringBuffer("James");
+		System.out.println(sb);
+		System.out.println(sb.toString());
+	}
+}
+
+****************************************************************************************************************
+immutability vs mutability
+**************************
+
+Immutability:- Once Created cannot be Modified.
+------------
+String is immutability class it means once we are creating String objects it is not possible to perform modifications on existing object. (String object is fixed object)
+
+Example 2:-
+**********
+class Test {
+	public static void main(String[] args) {
+		
+		// String class toString() executed
+		String str = "Vinay";
+		str.concat("Shetty");
+		System.out.println(str);
+		
+		
+		String st=new String("James");
+		st.concat("Gosling");
+		System.out.println(st);
+	}
+}
+
+
+Assignment 1:- If there is no concat operation happening from concat() method.
+what is the use of that method.
+Create a program to show the usage of this method.
+
+Hint:- Create 2 String Object.
+      str1 and str2.
+	  use str1.concat(str2)
+	  To verify use toString() method to conferm 
+
+
+mutability :- Once Created cannot be Modified.
+----------
+StringBuffer is a mutability class it means once we are creating StringBuffer objects on that existing object it is possible to perform modification.
+
+class Test {
+	public static void main(String[] args) {
+		
+		// String class toString() executed
+		StringBuffer str =new StringBuffer("Vinay");
+		str.append("Shetty");
+		System.out.println(str);
+	}
+}
+
+VinayShetty
+****************************************************************************************************************
+
+Internal implementation of .equals() method.
+********************************************
+.equals( ) method present in object used for reference comparison & return Boolean value.
+If two reference variables are pointing to same object returns true otherwise false.
+
+class Test {
+	public static void main(String[] args) {
+		Test t=new Test();
+		Test t1=new Test();
+		Test t2=t;
+		
+		System.out.println(t.equals(t1));
+		System.out.println(t1.equals(t));
+		System.out.println(t2.equals(t));
+	}
+}
+
+false
+false
+true
+
+
+String
+******
+
+ String is child class of object and it is overriding .equals( ) methods used for content comparison.
+ If two objects content is same then returns true otherwise false
+
+
+
+****************************************************************************************************************
+****************************************************************************************************************
+****************************************************************************************************************
+Assignment:- 1
+
+class Test {
+	public static void main(String[] args) {	
+		String str = "Vinay";
+		String str1 = "Shetty";
+		String str2=str.concat(str1);
+	
+		System.out.println(str);
+		System.out.println(str1);
+		System.out.println(str2);
+	}
+}
+****************************************************************************************************************
