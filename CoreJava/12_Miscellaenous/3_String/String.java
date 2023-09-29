@@ -210,7 +210,53 @@ String
  If two objects content is same then returns true otherwise false
 
 
+StringBuffer
+************
+ StringBuffer class is child class of object and it is not overriding equals() method hence it is using parent class(Object) equals() method used for reference comparison.
+ If two reference variables are pointing to same object returns true otherwise false.
 
+
+class Test {
+	public static void main(String[] args) {
+		String s="Vinay";
+		String s1="james";
+		String s2="Vinay";
+		
+		System.out.println(s.equals(s1));
+		System.out.println(s.equals(s2));
+		
+		System.out.println("----------------------");
+		
+		StringBuffer sb=new StringBuffer("Vinay");
+		StringBuffer sb1=new StringBuffer("James");
+		StringBuffer sb2=sb;
+		
+		System.out.println(sb.equals(sb1));
+		System.out.println(sb.equals(sb2));
+	}
+}
+****************************************************************************************************************
+== method and .equals () method Differences.
+
+
+****************************************************************************************************************
+
+StringBuilder
+*************
+Java.lang.StringBuilder:-
+
+1) Introduced in jdk1.5 version.
+2) StringBuilder is identical to StringBuffer except for one important difference.
+3) Every method present in the StringBuilder is not Synchronized means that is not thread safe.
+4) multiple threads are allow to operate on StringBuilder methods hence the performance of the application is increased.
+
+
+****************************************************************************************************************
+Difference between String StringBuffer and StringBuilder
+Difference begtween .equals() method and == method.
+****************************************************************************************************************
+All String class method basic examples.
+****************************************************************************************************************
 ****************************************************************************************************************
 ****************************************************************************************************************
 ****************************************************************************************************************
