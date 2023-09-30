@@ -177,7 +177,7 @@ class Exam{
 10
 
 *************************************************************************************************************
-Example:-5 Default values in Array is assigned by the JVM for primitive types and reference types.
+Example:-4 Default values in Array is assigned by the JVM for primitive types and reference types.
 Even for local variables.
 
 class Test{
@@ -202,13 +202,60 @@ class Emp{
 int values= 0
 Emp values= null
 *************************************************************************************************************
-Example:-4 Size of the array.
+Example:-5 The maximum allowed array size in java is maximum value of int size [2147483647].
 
+class Test {
+	public static void main(String[] args) {
+		byte b[] = new byte[2147483647];
+	//	byte b1[] = new byte[2147483648];
+		int z[] = new int[2147483647];
+	//	int z1[] = new int[2147483648];
+	}
+}
+
+Hint :- Compile Time error is not obtained.
+we might get RE.
 
 *************************************************************************************************************
-Example:-4
+Example:-6 MutliDimensional Array:-
+
+class Test {
+	public static void main(String[] args) {
+		int [][] a=new int[2][3];
+		System.out.println(a[0]);
+		System.out.println(a[1]);
+		
+		
+		System.out.println(a[0][0]);
+		System.out.println(a[0][1]);
+		System.out.println(a[0][2]);
+		
+
+		System.out.println(a[1][0]);
+		System.out.println(a[1][1]);
+		System.out.println(a[1][2]);
+	}
+}
+
+[I@2c7b84de
+[I@3fee733d
+0
+0
+0
+0
+0
+0
 *************************************************************************************************************
-Example:-4
+Example:-7 we cannot give negative size in the array.
+
+class Test {
+	public static void main(String[] args) {
+		int[] a=new int[-3];//
+	}
+}
+
+Hint :- No Error , But we will get Exception.
+Assignment :- Check which Exception.And Handle it.
 *************************************************************************************************************
 Example:-4
 *************************************************************************************************************
