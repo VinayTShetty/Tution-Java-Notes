@@ -314,9 +314,8 @@ Java.lang.StringBuilder:-
 3) Every method present in the StringBuilder is not Synchronized means that is not thread safe.
 4) multiple threads are allow to operate on StringBuilder methods hence the performance of the application is increased.
 
-
 ****************************************************************************************************************
-Difference begtween .equals() method and == method.
+Difference begtween .equals() method and == operator.
 ****************************************************************************************************************
 All String class method basic examples.
 ****************************************************************************************************************
