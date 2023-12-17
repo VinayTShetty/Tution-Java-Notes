@@ -19,7 +19,7 @@ Inner class
 
 Syntax for Inner class Object.
 
-<Outerclass>.<Innerclass> <referenceVariable> =<OuterClass variable>.new <Innerclass>();
+<Outerclass>.<Innerclass> <referenceVariable> =<OuterClass Object variable>.new <Innerclass>();
 
 class Test
 {
